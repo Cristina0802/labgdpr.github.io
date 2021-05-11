@@ -32,4 +32,4 @@ function resetOnce() {
 <body> Apasa butonul <button onclick="alertCookie()">Show cookies</button> 
 <button onclick="alertCookieValue()">Show cookie value</button> 
 <button onclick="doOnce()">Only do something once</button>
-<button onclick="resetOnce()">Reset only once cookie</button> </body>
+<button onclick="resetOnce()">Reset only once cookie</button></body>
