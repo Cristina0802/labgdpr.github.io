@@ -16,6 +16,14 @@ const cookieValue = document.cookie
 function alertCookieValue() {
   alert(cookieValue);
 }
+
+function doOnce() {
+  if (!document.cookie.split('; ').find(row => row.startsWith('doSomethingOnlyOnce'))) {
+    alert("Do something here!");
+    document.cookie = "doSomethingOnlyOnce=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+  }
+}
 </script>
 <body> Apasa butonul <button onclick="alertCookie()">Show cookies</button> 
-<button onclick="alertCookieValue()">Show cookie value</button> </body>
+<button onclick="alertCookieValue()">Show cookie value</button> 
+<button onclick="doOnce()">Only do something once</button></body>
