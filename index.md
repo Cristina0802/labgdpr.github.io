@@ -17,5 +17,5 @@ function alertCookieValue() {
   alert(cookieValue);
 }
 </script>
-<body> Apasa butonul <button onclick="alertCookie()">Show cookies</button> </body>
-<body> <button onclick="alertCookieValue()">Show cookie value</button> </body>
+<body> Apasa butonul <button onclick="alertCookie()">Show cookies</button> 
+<button onclick="alertCookieValue()">Show cookie value</button> </body>
